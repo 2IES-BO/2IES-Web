@@ -1,22 +1,37 @@
 ---
-import BottomCircuit from "@components/vectors/BottomCircuit.astro"
+import BottomCircuit from "@components/vectors/BottomCircuit.astro";
 import Logo2ies from "@components/vectors/Logo2ies.astro";
 ---
-<main>
-    <div class="bottomc">
-    <BottomCircuit class="bc" />
-    </div>
-    <h1>Sitio en construcción</h1>
+
+<main class="under-const-container">
+  <div class="bottomc">
+    <BottomCircuit />
+  </div>
+  <div class="logo2ies-container">
     <Logo2ies />
-    <p>Estamos mejorando nuestro sitio</p>
+  </div>
+  <h1>Volvemos pronto!</h1>
+  <p>Estamos actualizando nuestro sitio web para brindarte una mejor experiencia</p>
 </main>
 
 <style>
-    .bottomc{
-        position: absolute;
-        bottom: 0;
-    }
-    p{
-
-    }
+  .under-const-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .logo2ies-container {
+    width: 200px;
+  }
+  .under-const-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .bottomc {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+  }
 </style>
