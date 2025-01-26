@@ -1,0 +1,51 @@
+---
+import Logo2Ies from "./vectors/Logo2ies.astro";
+---
+
+<article class="ucm-container">
+  <div class="ucm-logo-container">
+    <Logo2Ies />
+  </div>
+  <h1>Estamos Actualizando Nuestro Portal Web!</h1>
+</article>
+
+<style>
+  .ucm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /*border: 1px solid black;*/
+  }
+  .ucm-logo-container {
+    min-width: 200px;
+    max-width: 300px;
+    width: 100%;
+  }
+  .ucm-container h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #f4f6f6;
+  }
+  /* SMARTPHONES PORTRAIT */
+  @media only screen and (min-width: 300px) {
+  }
+
+  /* SMARTPHONES LANDSCAPE */
+  @media only screen and (min-width: 480px) {
+  }
+
+  /* TABLETS PORTRAIT */
+  @media only screen and (min-width: 768px) {
+    .ucm-container h1{
+        font-size: 3rem;
+    }
+  }
+
+  /* TABLET LANDSCAPE / DESKTOP */
+  @media only screen and (min-width: 1024px) {
+  }
+</style>

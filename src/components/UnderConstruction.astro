@@ -1,37 +1,57 @@
 ---
-import BottomCircuit from "@components/vectors/BottomCircuit.astro";
-import Logo2ies from "@components/vectors/Logo2ies.astro";
+import UnderConstructionCircuit from "./UnderConstructionCircuit.astro";
+import UnderConstructionMessage from "./UnderConstructionMessage.astro";
 ---
 
-<main class="under-const-container">
-  <div class="bottomc">
-    <BottomCircuit />
-  </div>
-  <div class="logo2ies-container">
-    <Logo2ies />
-  </div>
-  <h1>Volvemos pronto!</h1>
-  <p>Estamos actualizando nuestro sitio web para brindarte una mejor experiencia</p>
+<main class="uc-container">
+  <UnderConstructionCircuit class="uc-first-circuit" />
+  <UnderConstructionMessage />
+  <UnderConstructionCircuit class="uc-last-circuit" />
 </main>
 
 <style>
-  .under-const-container {
+  .uc-container {
+    background-color: #4fa669;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-end;
+    padding: 0px 30px;
+    gap: 50px;
   }
-  .logo2ies-container {
-    width: 200px;
+  .uc-first-circuit {
+    display: none;
   }
-  .under-const-container h1 {
-    font-size: 2rem;
-    font-weight: 600;
+  .uc-last-circuit {
+    width: 20vw;
   }
-  .bottomc {
-    position: absolute;
-    bottom: 0;
-    left: 40px;
+
+  /* SMARTPHONES PORTRAIT */
+  @media only screen and (min-width: 300px) {
+  }
+
+  /* SMARTPHONES LANDSCAPE */
+  @media only screen and (min-width: 480px) {
+  }
+
+  /* TABLETS PORTRAIT */
+  @media only screen and (min-width: 768px) {
+    .uc-container {
+      flex-direction: row;
+      align-items: unset;
+      gap: 8vw;
+      padding: 0px 50px;
+    }
+  }
+
+  /* TABLET LANDSCAPE / DESKTOP */
+  @media only screen and (min-width: 1024px) {
+    .uc-first-circuit {
+      display: flex;
+    }
+    .uc-last-circuit {
+      width: 100%;
+    }
   }
 </style>
