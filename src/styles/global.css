@@ -1,4 +1,9 @@
 html {
     background-color: #f1f5f9;
-    font-family: sans-serif;
+}
+body {
+    font-family: 'Space Mono', monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Staatliches', system-ui;
 }
