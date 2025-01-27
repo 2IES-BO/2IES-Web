@@ -23,9 +23,6 @@ import UnderConstructionMessage from "./UnderConstructionMessage.astro";
   .uc-first-circuit {
     display: none;
   }
-  .uc-last-circuit {
-    width: 20vw;
-  }
 
   /* SMARTPHONES PORTRAIT */
   @media only screen and (min-width: 300px) {
@@ -39,9 +36,13 @@ import UnderConstructionMessage from "./UnderConstructionMessage.astro";
   @media only screen and (min-width: 768px) {
     .uc-container {
       flex-direction: row;
-      align-items: unset;
+      align-items: stretch;
+      justify-content: center;
       gap: 8vw;
       padding: 0px 50px;
+    }
+    .uc-first-circuit, .uc-last-circuit{
+      align-self: flex-end;
     }
   }
 
@@ -50,8 +51,6 @@ import UnderConstructionMessage from "./UnderConstructionMessage.astro";
     .uc-first-circuit {
       display: flex;
     }
-    .uc-last-circuit {
-      width: 100%;
-    }
+    
   }
 </style>
