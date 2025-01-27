@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.5",
+    "@fontsource/space-mono": "^5.1.2",
     "@fontsource/staatliches": "^5.1.1",
     "@fontsource/twinkle-star": "^5.1.1",
     "astro": "^5.1.9",
