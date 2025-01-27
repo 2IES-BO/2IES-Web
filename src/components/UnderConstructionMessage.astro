@@ -15,12 +15,12 @@ import Logo2Ies from "./vectors/Logo2ies.astro";
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.5rem;
     /*border: 1px solid black;*/
   }
   .ucm-logo-container {
     min-width: 200px;
-    max-width: 300px;
+    max-width: 200px;
     width: 100%;
   }
   .ucm-container h1 {
@@ -36,6 +36,9 @@ import Logo2Ies from "./vectors/Logo2ies.astro";
 
   /* SMARTPHONES LANDSCAPE */
   @media only screen and (min-width: 480px) {
+    .ucm-logo-container{
+        max-width: 300px;
+    }
   }
 
   /* TABLETS PORTRAIT */
@@ -46,6 +49,12 @@ import Logo2Ies from "./vectors/Logo2ies.astro";
   }
 
   /* TABLET LANDSCAPE / DESKTOP */
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1370px) {
+    .ucm-logo-container{
+        max-width: 400px;
+    }
+    .ucm-container h1{
+        font-size: 4rem;
+    }
   }
 </style>
