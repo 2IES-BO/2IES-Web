@@ -1,13 +1,28 @@
 ---
+import Buttons from "./Buttons.astro";
+import Logo2ies from "./vectors/Logo2ies.astro";
+
 
 ---
 
-<header class="header-containter">
-    Header
-</header>
-<style>
-    .header-containter{
-        color: navy;
-        height: 50vh;
-    }
-</style>
+<nav class="flex w-full h-[10vh] justify-around items-center my-4">
+    <div class="flex h-full min-w-[100px] w-1/10">
+        <Logo2ies bgColor="#4fa669" fgColor="#f4f6f6"/>
+    </div>
+    <div class="flex items-center gap-8 font-semibold">
+        <a href="">HOME</a>
+        <a href="">NOSOTROS</a>
+        <a href="">SERVICIOS</a>
+        <a href="">PRODUCTOS</a>
+        <a href="">GALERÍA DE ÉXITOS</a>
+        <a href="">CLIENTES</a>
+    </div>
+    <div class="flex gap-5">
+        <Buttons text ="Contactar" bgcolor="bg-headerGreen" fgcolor="text-headerButtonText"/>
+        <Buttons text ="F16 de Julio" bgcolor="bg-headerBlue" fgcolor="text-headerButtonText"/>
+    </div>
+    <div class="hidden">
+    <p>Aca va la hamburguesa que todavia no esta lista :(</p>
+    </div>
+    
+</nav>
