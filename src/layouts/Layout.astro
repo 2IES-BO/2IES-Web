@@ -5,6 +5,8 @@ import "@fontsource/space-mono/400-italic.css";
 import "@fontsource/space-mono/700-italic.css";
 import "../styles/global.css";
 const underConstruction = import.meta.env.UNDER_CONSTRUCTION == "TRUE";
+const { title = ""} = Astro.props
+const titleCompleto = title ? `2IES - ${title}` : "2IES";
 ---
 
 <!doctype html>
@@ -12,9 +14,9 @@ const underConstruction = import.meta.env.UNDER_CONSTRUCTION == "TRUE";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Logo2ies.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>2IES</title>
+    <title>{titleCompleto}</title>
   </head>
   <body>
     {underConstruction ? <UnderConstruction /> : <slot />}
