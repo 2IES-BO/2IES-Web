@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 /*regular*/
 @font-face {
   font-family: 'staatliches';
-  src: url('/fonts/lato/Staatliches-Regular.woff2') format('woff2');
+  src: url('/fonts/staatliches/Staatliches-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
