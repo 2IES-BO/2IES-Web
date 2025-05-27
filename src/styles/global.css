@@ -44,4 +44,65 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
 }
 
+:root {
+    --color--bg: #f4f6f6;           /* "bg" de la biblioteca del diseño en Penpot */
+    --color--bg--dark: #071e08;     /* "bg-dark" de la biblioteca del diseño en Penpot */
 
+    --color--primary: #1ebf8f;          /* "Primary" de la biblioteca del diseño en Penpot */
+    --color--primary--light: #3de074;   /* "Color vivo" de la biblioteca del diseño en Penpot */
+    --color--primary--dark: #228b7b;    /* "Color oscuro" de la biblioteca del diseño en Penpot */
+    
+    --color--accent: #2cc9a7;   /* "accent" de la biblioteca del diseño en Penpot */
+    --color--success: #228b22;  /* "Color mediovivo" de la biblioteca del diseño en Penpot */
+    --color--error: #e74c3c;    /* Propuesta de color para: errores */
+
+    --color--text: #4a544c;             /* "text" de la biblioteca del diseño en Penpot */
+    --color--text--light: #7a8c7d;      /* Propuesta de color para: texto claro */
+    --color--text--inverse: #ffffff;    /* Propuesta de color para: texto con fondos oscuros */
+
+    /* --- Colores Específicos de Componentes encontrados en el diseño en Penpot --- */
+    /* Sección "Lo que ofrecemos" */
+    --color--section-offer: #38c166;
+  
+    /* Galería de Proyectos */
+    --color--projects-gallery-bg: #c0c4c0;
+  
+    /* Botón Contactar */
+    --color--contact-btn: #2eaa2e;          /* Botón Contactar */
+    --color--schedule-btn: #4fa669;         /* Variante de color encontrada para el Botón Contactar */
+    --color--schedule-btn--mobile: #fdfffe; /* Botón Agendar Cita */
+  
+    /* Proyecto F16 */
+    --color--f16-project: #eb583b;    /* Se encontraron dos colores para Desktop y Mobile */
+    --color--f16-project--mobile: #e37b40;
+    --color--f16-header: #DE2F17;
+    --color--f16-bg: rgba(146, 244, 146, 0.57);
+    --color--f16-android-btn: #0DF2DD;
+  
+    /* Formulario Contacto */
+    --color--contact-form-header: #45cc2f;
+    --color--contact-form-bg: #d2f2db;
+  
+    --color--team-overlay: rgba(166, 230, 255, 0.65);   /* Foto de equipo */
+
+    /* Escala para primary generada manualmente */
+    --color--primary-100: #92EED3;
+    --color--primary-300: #4CE3B6;
+    --color--primary-500: #1EBF8F; /* Color primary */
+    --color--primary-700: #148161;
+    --color--primary-900: #0B4433;    
+
+    /* Escala para primary--light generada con hsl */
+    --hue-primary-light: 144;
+    --sat-primary-light: 69%;
+
+    --color--primary-light-100: hsl(var(--hue-primary-light), var(--sat-primary-light), 90%);
+    --color--primary-light-200: hsl(var(--hue-primary-light), var(--sat-primary-light), 75%);
+    --color--primary-light-300: hsl(var(--hue-primary-light), var(--sat-primary-light), 65%);
+    --color--primary-light-400: hsl(var(--hue-primary-light), var(--sat-primary-light), 60%);
+    --color--primary-light-500: hsl(var(--hue-primary-light), var(--sat-primary-light), 57%); /* #3de074 */
+    --color--primary-light-600: hsl(var(--hue-primary-light), var(--sat-primary-light), 50%);
+    --color--primary-light-700: hsl(var(--hue-primary-light), var(--sat-primary-light), 42%);
+    --color--primary-light-800: hsl(var(--hue-primary-light), var(--sat-primary-light), 33%);
+    --color--primary-light-900: hsl(var(--hue-primary-light), var(--sat-primary-light), 25%);
+}
