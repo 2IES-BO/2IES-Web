@@ -1,0 +1,75 @@
+---
+
+---
+
+<div class="mivi-container">
+  <div class="mivi-card mission">
+    <h3 class="mivi-title">MISIÓN</h3>
+    <p class="mivi-text">
+      Proveer servicios y productos tecnológicos que mejoren la eficiencia y
+      productividad de nuestros clientes, guiados por nuestros conocimientos de
+      ingeniería y nuestros valores de innovación, calidad y compromiso con el
+      cliente
+    </p>
+  </div>
+  <div class="mivi-card vision">
+    <h3 class="mivi-title">VISIÓN</h3>
+    <p class="mivi-text">
+      Convertirse en una empresa de renombre mundial, reconocida por su
+      participación en proyectos tecnológicos de vanguardia que impulsen la
+      innovación y mejoren la calidad de trabajo de las empresas que nos
+      contraten, manteniendo un compromiso constante con la excelencia
+    </p>
+  </div>
+</div>
+
+<style>
+  .mivi-container {
+    display: flex;
+    gap: 50px;
+    padding: 50px 0;
+    justify-content: start;
+    background: var(--color--bg);
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .mivi-card {
+    border-radius: 20px;
+    padding: 20px 10px;
+    width: 50%;
+    color: var(--color--text--inverse);
+    text-align: center;
+  }
+
+  .mission {
+    background: var(--color--bg--dark);
+  }
+
+  .vision {
+    background: var(--color--primary--dark);
+  }
+
+  .mivi-title {
+    font-family: "staatliches";
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
+  .mivi-text {
+    font-family: "lato";
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .mivi-container {
+      flex-direction: column;
+    }
+    .mivi-card {
+      width: 100%;
+    }
+  }
+</style>
