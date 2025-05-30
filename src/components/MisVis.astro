@@ -1,0 +1,88 @@
+---
+
+---
+<div  class="MisVis">
+    <div class="MisVis-container">
+        <div class="MisVis-card MisVis-card--mision">
+            <h1 class="MisVis-card__title">Misión</h1>
+                <p class="MisVis-card__text"> Proveer servicios y productos tecnológicos que mejoren la eficiencia y productividad de nuestros clientes, guiados por nuestros conocimientos de ingeniería y nuestros valores de innovación, calidad y compromiso con el cliente</p>
+        </div>
+
+        <div class="MisVis-card MisVis-card--vision">
+            <h1 class="MisVis-card__title">Visión</h1>
+                <p class="MisVis-card__text"> Convertirse en una empresa de renombre mundial, reconocida por su participación en proyectos tecnológicos de vanguardia que impulsen la innovación y mejoren la calidad de trabajo de las empresas que nos contraten, manteniendo un compromiso constante con la excelencia</p>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    /* Falta revisar en pantallas pequeñas*/
+    .MisVis {
+        display: flex;
+        flex-direction: column;
+        
+    }  
+
+    .MisVis-container {
+        display: flex;
+        background: var(--color--bg);
+        width: 100%;
+        border-radius: 1.25rem; /* 20px */
+        
+        gap: 3.125rem; /* 50px */
+    }
+
+    .MisVis-card {
+        width: min(100%, 45rem);
+        height: auto; /* 285px */
+        min-width: min-content;
+        border-radius: 1.25rem; /* 20px */
+        padding: 1.25rem 0.625rem; /* 20px 10px */
+        color: var(--color--bg);
+    }
+
+    .MisVis-card__text {
+        text-align: center;
+        font-family: 'lato';
+        font-size: clamp(1rem, 2.5vw, 1.375rem); 
+    }
+
+    .MisVis-card__title {
+        font-size: 3.125rem; /* 50px */
+        text-align: center;
+        font-family: 'staatliches';
+    }
+
+    .MisVis-card--mision {
+        background: var(--color--bg--dark);
+        margin: 3.125rem 0 3.125rem 6.25rem; /* 50px 0 50px 100px */
+    }
+
+    .MisVis-card--vision {
+        background: var(--color--primary--dark);
+        margin: 3.125rem 6.25rem 3.125rem 0; /* 50px 100px 50px 0 */
+    }
+
+    @media (max-width: 1000px) {
+        .MisVis-container {
+            flex-direction: column;
+            border-radius: 1.25rem; /* 20px */
+            gap: 3.125rem; /* 50px */
+            padding: 2% 5%;
+        }
+    
+        .MisVis-card {
+            width: 100%;
+            margin: 0.5rem 0 !important; 
+        }
+    
+        .MisVis-card__title {
+            font-size: 2rem; 
+        }
+    }
+
+</style>
+
+
+
